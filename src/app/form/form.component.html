@@ -1,0 +1,14 @@
+<form #myForm="ngForm">
+
+
+<input type="text" name="ID" placeholder="הזן מספר תעודת זהות" required value="" #identification="ngModel" [(ngModel)]="user.name">
+<input type="number" name="Data of birth" placeholder="הזן את שנת הלידה שלך" value="" #dateofbirth="ngModel" [(ngModel)]="user.password">
+
+<hr>
+
+<label for="">האם אתה בכל הפוליסה</label>
+<input type="radio" name="" value="">
+<input type="radio" name="" value="">
+
+<button type="submit" name="button" (click)="postToServer()">submit</button>
+</form>
